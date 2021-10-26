@@ -41,6 +41,20 @@ namespace Library
             return visitor.AgeTotal;
         }
 
+        public string GetLongestName()
+        {
+            Visitor visitor = new NameComparator();
+            this.Accept(visitor);
+            return visitor.LongestName;
+        }
+
+        public int GetOldSonAge()
+        {
+            Visitor visitor = new OldSon();
+            this.Accept(visitor);
+            return visitor.OldSon;
+        }
+
         public Persona Person
         {
             get
