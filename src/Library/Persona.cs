@@ -4,6 +4,7 @@ using System;
 
 namespace Library
 {
+    //Clase persona, la cual tiene un atributo nombre y edad
     public class Persona
     {
         private string name;
