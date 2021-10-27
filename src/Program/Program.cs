@@ -12,8 +12,9 @@ namespace Program
             Node n3 = new Node(new Persona("Matias",29));
             Node n4 = new Node(new Persona("Lucas",25));
             Node n5 = new Node(new Persona("Juan",20));
-            Node n6 = new Node(new Persona("Gonzalo",19));
+            Node n6 = new Node(new Persona("Gonzalo",16));
             Node n7 = new Node(new Persona("Mateorecoto",15));
+            Node n8 = new Node(new Persona("Pepe",21));
 
             n1.AddChildren(n2);
             n1.AddChildren(n3);
@@ -23,6 +24,8 @@ namespace Program
 
             n3.AddChildren(n6);
             n3.AddChildren(n7);
+
+            n4.AddChildren(n8);
 
             // visitar el árbol aquí
             Console.WriteLine(Convert.ToString(n1.GetAgeTotal()));
